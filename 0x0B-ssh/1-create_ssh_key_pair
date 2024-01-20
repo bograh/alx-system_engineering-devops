@@ -2,4 +2,22 @@
 # Generating SSH key-pairs according to Task requirements
 
 
-ssh-keygen -b 4096 -N "betty" -f ./school
+#!/bin/bash
+
+# Specify the key file name
+private_key_name="school"
+
+# Specify the number of bits for the key
+key_bits=4096
+
+# Specify the passphrase
+passphrase="betty"
+
+# Check if the key file already exists
+if [ -f "$private_key_name" ]; then
+  echo "Error: Key file '$private_key_name' already exists. Aborting."
+  exit 1
+fi
+
+# Generate the RSA key pair with the specified parameters
+ssh-keygen -t rsa -b "$key_bits" -f "$private_key_name" -N "$passphrase"
