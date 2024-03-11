@@ -43,4 +43,5 @@ We have Set developers' local environment with docker containers so they can do 
 
  *Ways to address the issue;* 
 
-Read log files Fix logs where error has been shown Locate concerned files Identify the current error (“deprecated and unused methods”) message Tried to update the methods whereas users were deferred on the backup server from the app file of 01:02 reset the whole app state to 01/02￼Enter
+Read log files Fix logs where error has been shown Locate concerned files Identify the current error (“deprecated and unused methods”) message Tried to update the methods whereas users were deferred on the backup server from the app file of 01:02 reset the whole app state to 01/02
+
